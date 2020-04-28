@@ -1,7 +1,6 @@
-=====
+
 # DjangoRunCommands
 
-=====
 
 A Python Django library which helps you to run management commands from admin dashboard.
 
@@ -17,10 +16,11 @@ Quick start
     ]
 
 2. Add commands to be run from admin in your settings file like::
-    COMMAND_CHOICES = (
-      ('collectstatic', "Collectstatic"), #  ('command', 'Name to be displayed')
+    
+    ``COMMAND_CHOICES = (
+      ('collectstatic', "Collectstatic"),
       ('loaddata', "Loaddata"),
-  )
+  )``
 
 3. Run ``python manage.py migrate`` to create the django_run_command models.
 
@@ -28,3 +28,4 @@ Quick start
    to run your management commands from admin (you'll need the Admin app enabled).
 
 5. This repository is open source feel free to contribute.
+
